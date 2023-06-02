@@ -1,1 +1,9 @@
-{}
+{
+  "function": {
+    "smoothMesh": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
+}

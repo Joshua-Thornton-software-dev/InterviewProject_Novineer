@@ -6,6 +6,7 @@ let stl_smoothed = null;
 let stlInput = null;
 let fileNameP = null;
 let badFileSection = null;
+let nurbsImg = null;
 
 window.onload = () => {
     // Set up the hidden file input.
@@ -22,6 +23,7 @@ window.onload = () => {
     // Set up other references.
     fileNameP = document.getElementById("fileName");
     badFileSection = document.getElementById("badFileSection");
+    nurbsImg = document.getElementById("nurbsImg");
 }
 
 // Imports an stil file from the client's file system.
