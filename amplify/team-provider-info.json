@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-novineerinterviewpro-staging-143942-authRole",
+      "UnauthRoleArn": "arn:aws:iam::903320081140:role/amplify-novineerinterviewpro-staging-143942-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::903320081140:role/amplify-novineerinterviewpro-staging-143942-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-novineerinterviewpro-staging-143942-deployment",
+      "UnauthRoleName": "amplify-novineerinterviewpro-staging-143942-unauthRole",
+      "StackName": "amplify-novineerinterviewpro-staging-143942",
+      "StackId": "arn:aws:cloudformation:us-east-2:903320081140:stack/amplify-novineerinterviewpro-staging-143942/4fe7d1d0-0153-11ee-8127-0a9d25fb1b37",
+      "AmplifyAppId": "dtub9twgx6mx8"
+    }
+  }
+}
