@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="src/index.js"></script>
+<link rel="stylesheet" href="src/css/index.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="src/js/index.js"></script>
 <body>
     <h1>Novineer Interview Project</h1>
     <br/>
     <br/>
     <br/>
-    <button onclick="importSTL()">Import STL file</button>
+    <div class="uploadSection">
+        <button type="button" onclick="importSTL()">Import STL file</button>
+        <p id="fileName" style="margin-left: 2.5%;">No file selected.</p>
+        <div id="inputContainer"></div>
+    </div>
+    <div class="badFileSection" id="badFileSection" style="display: none;">
+        <p id="badFileError">The selected file must be  </p>
+    </div>
+    <br/>
+    <br/>
+    <button class="displayImg-btn" type="button" onclick="displayImage()">Display 2D NURBS</button>
+    <br/>
+    <img class="NURBS-img" src="src/resources/defaultImg.png"/>
 </body>
 </html>
