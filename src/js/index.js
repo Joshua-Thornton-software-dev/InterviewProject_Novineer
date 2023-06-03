@@ -1,6 +1,7 @@
 
 const STL_IMPORT_ID = "stlInput-import";
-const REMESH_URL = "https://2xb9ejsu5a.execute-api.us-east-2.amazonaws.com/Staging";
+const STAGE_URL = "https://2xb9ejsu5a.execute-api.us-east-2.amazonaws.com/Staging";
+const REMESH_URL = STAGE_URL + "/smoothMesh";
 
 let stl_raw = null;
 let stl_smoothed = null;
@@ -42,6 +43,7 @@ function importChanged(e) {
         return;
     }
     badFileSection.style.display = "none";
+    getNURBsFromSTL(selectedFile);
 }
 
 function getNURBsFromSTL(stlFile) {
@@ -50,6 +52,13 @@ function getNURBsFromSTL(stlFile) {
         url: REMESH_URL,
         headers: {
             stlFile: JSON.stringify(stlFile)
+        },
+        "Access-Control-Allow-Origin": "*",
+        success: function(res) {
+            alert("success!");
+        },
+        error: function(error) {
+            alert("error: " + JSON.stringify(error));
         }
     })
 }
