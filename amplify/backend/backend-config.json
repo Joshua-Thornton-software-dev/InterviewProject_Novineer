@@ -1,9 +1,43 @@
 {
+  "api": {
+    "remeshing": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "smoothMesh"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "function": {
     "smoothMesh": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_smoothMesh_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "smoothMesh"
+        }
+      ]
+    },
+    "AMPLIFY_function_smoothMesh_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "smoothMesh"
+        }
+      ]
     }
   }
 }

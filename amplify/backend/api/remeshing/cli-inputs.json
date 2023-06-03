@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/getNURBsFromSTL": {
+      "name": "/getNURBsFromSTL",
+      "lambdaFunction": "smoothMesh",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

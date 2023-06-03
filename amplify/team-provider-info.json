@@ -13,7 +13,13 @@
     },
     "categories": {
       "function": {
-        "smoothMesh": {}
+        "smoothMesh": {
+          "deploymentBucketName": "amplify-novineerinterviewpro-staging-143942-deployment",
+          "s3Key": "amplify-builds/smoothMesh-5837563659564c536962-build.zip"
+        }
+      },
+      "api": {
+        "remeshing": {}
       }
     }
   }

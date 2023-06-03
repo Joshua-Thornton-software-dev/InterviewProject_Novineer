@@ -1,5 +1,6 @@
 
-let STL_IMPORT_ID = "stlInput-import";
+const STL_IMPORT_ID = "stlInput-import";
+const REMESH_URL = "https://2xb9ejsu5a.execute-api.us-east-2.amazonaws.com/Staging";
 
 let stl_raw = null;
 let stl_smoothed = null;
@@ -43,9 +44,20 @@ function importChanged(e) {
     badFileSection.style.display = "none";
 }
 
+function getNURBsFromSTL(stlFile) {
+    $.ajax({
+        type: "GET",
+        url: REMESH_URL,
+        headers: {
+            stlFile: JSON.stringify(stlFile)
+        }
+    })
+}
+
 function extractMesh(stlFile) {
     let mesh = null;
 
+    smoothM
 
     return mesh;
 }
