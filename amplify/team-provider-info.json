@@ -20,6 +20,9 @@
       },
       "api": {
         "remeshing": {}
+      },
+      "auth": {
+        "NovineerInterviewProject": {}
       }
     }
   }
